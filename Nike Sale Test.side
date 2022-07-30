@@ -1,0 +1,127 @@
+{
+  "id": "c7ff4a2c-0166-463c-8138-9b6280fcb93a",
+  "version": "2.0",
+  "name": "Nike Test",
+  "url": "https://www.nike.com/",
+  "tests": [{
+    "id": "d866a9c9-c147-4ba7-af2b-c1ff6c64389b",
+    "name": "Sale Through Navbar",
+    "commands": [{
+      "id": "eb8c470b-e966-423e-a919-213993a42e05",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.nike.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b745ab7-60b8-4f8f-a999-6a4f18fcd9f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1320231a-13a8-479b-b7bc-e04ef1793f92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sale",
+      "targets": [
+        ["linkText=Sale", "linkText"],
+        ["css=.d-sm-h > .pre-desktop-menu-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sale')])[14]", "xpath:link"],
+        ["xpath=//div[@id='gen-nav-commerce-header-v2']/div[3]/header/div/div/div[2]/nav/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.nike.com/w/sale-3yaep')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "772f8d8b-1948-44e7-a83a-8a4d81a4fb2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wallNavFG1 > .is--link:nth-child(1) > .pseudo-checkbox",
+      "targets": [
+        ["css=#wallNavFG1 > .is--link:nth-child(1) > .pseudo-checkbox", "css:finder"],
+        ["xpath=//div[@id='wallNavFG1']/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb58c37d-4af1-4f3c-a98b-d3b56adaacb6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c40bbba6-2362-409b-8b35-c828bd72a5c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wallNavFG1 > .filter-item:nth-child(2) > .pseudo-checkbox",
+      "targets": [
+        ["css=#wallNavFG1 > .filter-item:nth-child(2) > .pseudo-checkbox", "css:finder"],
+        ["xpath=//div[@id='wallNavFG1']/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4abef765-ef96-4595-899f-18b2972b39bf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06fd929e-661b-4eb9-ba95-0a1aa5f3e973",
+      "comment": "",
+      "command": "click",
+      "target": "css=#wallNavFG1 > .is--button > .pseudo-checkbox",
+      "targets": [
+        ["css=#wallNavFG1 > .is--button > .pseudo-checkbox", "css:finder"],
+        ["xpath=//div[@id='wallNavFG1']/button/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "592f8722-1a31-465f-8223-daefdbf12ee4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6ba7a40-330c-4fb7-8f10-c5bed349a13d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product-card:nth-child(1) .product-card__hero-image",
+      "targets": [
+        ["css=.product-card:nth-child(1) .product-card__hero-image", "css:finder"],
+        ["xpath=//img[@alt=\"Nike Air Max 270 Women's Shoes\"]", "xpath:img"],
+        ["xpath=//div[@id='Wall']/div/div[5]/div[2]/main/section/div/div/div/figure/a[2]/div/img", "xpath:idRelative"],
+        ["xpath=//a[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04d06f35-0092-4e8c-a8cf-759a5f5d3a48",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.colorway:nth-child(1) img",
+      "targets": [
+        ["css=.colorway:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Dark Grey Heather/Black']", "xpath:img"],
+        ["xpath=//div[@id='Wall']/div/div[5]/div[2]/main/section/div/div[3]/div/figure/div/div[2]/div/div/div/a/div/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "83379932-0add-4718-9851-e1fe9fd0a076",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d866a9c9-c147-4ba7-af2b-c1ff6c64389b"]
+  }],
+  "urls": ["https://www.nike.com/"],
+  "plugins": []
+}
